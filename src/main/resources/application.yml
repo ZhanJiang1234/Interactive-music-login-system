@@ -1,0 +1,24 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:music.db
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 300MB
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configLocation: classpath:mybatis-config.xml
+
+logging:
+  level:
+    com.example.erp.mapper: debug
+
+upload: D:/project/upload

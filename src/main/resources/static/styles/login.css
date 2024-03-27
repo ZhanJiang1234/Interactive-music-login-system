@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+.form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+
+img {
+   width: 500px;
+}
+
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 100%;
+    background-image: url(../images/login_bg.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.music-login {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+    margin: 1.2em 1vw;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+	height: 200px;
+    line-height: 200px;
+}
+
+.music-login .form {
+    max-width: 500px;
+    margin: 0 5vw;
+    padding: 3.5vw;
+    border-width: 5px 0;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    background: rgba(252, 254, 255, 0.11);
+	border-radius: 8px;
+}
+
+.agile-field-txt {
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    margin-bottom: 1.5em;
+}
+.music-login input[type="text"], .music-login input[type="password"] {
+    width: 100%;
+    color: #fff;
+    outline: none;
+    background: rgba(0, 0, 0, 0.32);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+}
+.music-login ::-webkit-input-placeholder {
+    color: #eee;    
+ } 
+ .music-login :-ms-input-placeholder {  
+    color:#eee;
+ }
+
+
+
+.agile_label {
+    text-align: left;
+    margin: 10px 0 0;
+}
+
+
+
+.w3ls-bot {
+    width: 100%;
+}
+
+
+@media(max-width:1024px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 2.3em;
+    }
+    .music-login .form {
+        padding: 7.5vw;
+    }
+}
+@media(max-width:568px) {
+    .music-login{
+        flex-direction: column;
+    }
+    .music-login img{ 
+        order:1;
+        margin-top: 1em;
+    }
+}
+
+@media(max-width:440px) {
+    h1 {
+        font-size: 2.1em;
+    }
+    .parent {
+        display: block;
+    }
+}
+
+@media(max-width:320px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .music-login .form {
+        padding: 25px 8px;
+    }
+}

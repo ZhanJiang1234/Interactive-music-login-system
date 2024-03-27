@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.music.mapper.MusicMapper">
+
+    <select id="queryMyPage" resultType="com.project.music.model.MyMusicVo">
+        select
+            a.*, b.id as collectId, b.music_id , b.user_id
+            from music a, music_collect b
+        where a.id = b.music_id and b.user_id=#{param2.userId} order by b.created_time desc
+    </select>
+
+    <select id="queryHostMusicList" resultType="com.project.music.model.MusicVo">
+        select m.music_name, m.album_cover_url, count(1) cnt
+        from music m, music_collect mc where mc.music_id = m.id group by m.music_name, m.album_cover_url order by cnt desc
+        limit 6
+    </select>
+</mapper>
